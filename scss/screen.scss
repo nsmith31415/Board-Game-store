@@ -1,0 +1,53 @@
+@import "reset";
+
+body {
+  font-family: Helvetica;
+  font-size: 16px;
+  line-height: 21px;
+  background: lightgrey;
+}
+
+a {
+  color: #800000;
+}
+
+.wrap {
+    background:url(http://www.settlersstrategy.com/wp-content/uploads/2013/06/DualPort.jpg);
+    background-position: center center;
+    background-size: cover;
+    min-height: 600px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+%container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.hero-grid {
+    @extend %container;
+    background:pink;
+}
+
+.hero-text {
+    // border: 1px solid blue;
+    background: white;
+    padding: 1.2em 1.4em;
+    font-size: 20px;
+    line-height: 1.4;
+}
+
+.products {
+    padding: 100px 0;
+    @extend %container;
+
+    div {
+        // border: 1px solid blue;
+    }
+}
+
+
+
+
+
