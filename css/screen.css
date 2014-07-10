@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -59,14 +60,15 @@ body {
   font-family: Helvetica;
   font-size: 16px;
   line-height: 21px;
-  background: lightgrey;
+  background: #ddd;
 }
 
 a {
   color: #800000;
 }
 
-.nav li {
+body.home li.home, body.testimonials li.testimonials, body.products li.products, body.purchase li.purchase {
+  font-weight: bold;
   border-bottom: 3px solid #333;
 }
 
@@ -79,7 +81,7 @@ a {
   padding-bottom: 100px;
 }
 
-.hero-grid, section.products {
+.hero-grid, section.products, body.purchase {
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -93,4 +95,34 @@ a {
 
 section.products {
   padding: 100px 0;
+}
+section.products div {
+  background: #fff;
+}
+
+input {
+  display: none;
+}
+input + label {
+  padding: 10px;
+  border-radius: 10px;
+  transition: all 500ms;
+}
+input[type="checkbox"] + label:hover, input [type="radio"] + label:hover {
+  background: yellow;
+}
+input:checked + label {
+  background: #aaffaa !important;
+}
+input:checked + label:before {
+  content: "✔ ";
+}
+input[type="textarea"] {
+  display: block;
+  height: 8em;
+  padding: 0 0 100px;
+}
+
+.form-item {
+  margin-bottom: 20px;
 }
