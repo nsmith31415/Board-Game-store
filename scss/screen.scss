@@ -11,6 +11,22 @@ a {
   color: #800000;
 }
 
+// NAV
+
+.nav li {
+    border-bottom: 3px solid #333;
+}
+
+// When I'm on the homepage,
+// the "home" nav should be active
+
+// When I'm on the purchase page,
+// the "purchase" nav should be active
+
+// ETC
+
+// CONTENT
+
 .wrap {
     background:url(http://www.settlersstrategy.com/wp-content/uploads/2013/06/DualPort.jpg);
     background-position: center center;
@@ -38,7 +54,7 @@ a {
     line-height: 1.4;
 }
 
-.products {
+section.products {
     padding: 100px 0;
     @extend %container;
 
